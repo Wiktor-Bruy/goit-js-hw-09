@@ -69,6 +69,8 @@ const images = [
   },
 ];
 
+// Створюємо вміст галереї і додаємо в DOM
+
 let gallery = [];
 
 images.forEach(({ preview, original, description }) => {
@@ -90,6 +92,8 @@ images.forEach(({ preview, original, description }) => {
 
 const list = document.querySelector('.gallery');
 list.append(...gallery);
+
+// Створюємо об'єкт з налаштуваннями і передаємо йго в клас модулю галереї разом з галереєю
 
 const settings = {
   captionsData: 'alt',
